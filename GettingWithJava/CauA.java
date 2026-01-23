@@ -1,0 +1,7 @@
+package GettingWithJava;
+
+public class CauA {
+	public static void main(String[] args) {
+		System.out.println("Chào mừng bạn đến với khoa CNTT.");
+	}
+}
