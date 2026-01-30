@@ -4,47 +4,46 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class QuanLyNhanVien {
-	ArrayList<NhanVienFullTime> Full = new ArrayList<NhanVienFullTime>();
-	ArrayList<NhanVienPartTime> Part = new ArrayList<NhanVienPartTime>();
+	ArrayList<NhanVienFullTime> Full = new ArrayList<>();
+	ArrayList<NhanVienPartTime> Part = new ArrayList<>();
 	Scanner sc = new Scanner(System.in);
 	public void themNhanVien(int luaChon) {
 		switch(luaChon) {
 		
-		case 1: 	
-			System.out.println("Nhập mã nhân viên:");
-			String MaNV = sc.nextLine();
-			
-			System.out.println("Nhập tên:");
-			String TenNV = sc.nextLine();
-			
-			System.out.println("Nhập Lương Cơ Bản:");
-			double LuongCB = Double.parseDouble(sc.nextLine());
-			System.out.println("Nhập Hệ số lương:");
-			double HeSo = Double.parseDouble(sc.nextLine());
-			
-			NhanVienFullTime nv = new NhanVienFullTime(MaNV,TenNV,LuongCB,HeSo);
-			Full.add(nv);
-			break;
-		case 2:
-			
-			System.out.println("Nhập mã nhân viên:");
-			String MaNv = sc.nextLine();
-			
-			System.out.println("Nhập tên:");
-			String TenNv = sc.nextLine();
-			
-			System.out.println("Nhập Lương Cơ Bản:");
-			double LuongCb = Double.parseDouble(sc.nextLine());
-			
-			System.out.println("Nhập giờ làm:");
-			int gioLam = Integer.parseInt(sc.nextLine());
-			
-			System.out.println("Nhập lương theo giờ: ");
-			double LuongGio = Double.parseDouble(sc.nextLine());
-			
-			NhanVienPartTime nv1 = new NhanVienPartTime(MaNv,TenNv, LuongCb, gioLam, LuongGio);
-			Part.add(nv1);
-			break;
+		case 1 -> {
+                    System.out.println("Nhập mã nhân viên:");
+                    String MaNV = sc.nextLine();
+                    
+                    System.out.println("Nhập tên:");
+                    String TenNV = sc.nextLine();
+                    
+                    System.out.println("Nhập Lương Cơ Bản:");
+                    double LuongCB = Double.parseDouble(sc.nextLine());
+                    System.out.println("Nhập Hệ số lương:");
+                    double HeSo = Double.parseDouble(sc.nextLine());
+                    
+                    NhanVienFullTime nv = new NhanVienFullTime(MaNV,TenNV,LuongCB,HeSo);
+                    Full.add(nv);
+                }
+		case 2 -> {
+                    System.out.println("Nhập mã nhân viên:");
+                    String MaNv = sc.nextLine();
+                    
+                    System.out.println("Nhập tên:");
+                    String TenNv = sc.nextLine();
+                    
+                    System.out.println("Nhập Lương Cơ Bản:");
+                    double LuongCb = Double.parseDouble(sc.nextLine());
+                    
+                    System.out.println("Nhập giờ làm:");
+                    int gioLam = Integer.parseInt(sc.nextLine());
+                    
+                    System.out.println("Nhập lương theo giờ: ");
+                    double LuongGio = Double.parseDouble(sc.nextLine());
+                    
+                    NhanVienPartTime nv1 = new NhanVienPartTime(MaNv,TenNv, LuongCb, gioLam, LuongGio);
+                    Part.add(nv1);
+                }
 		}
 	}
 	
@@ -89,22 +88,18 @@ public class QuanLyNhanVien {
 			System.out.println("1: Nhập, 2: Xuát, 3: Tìm theo ID, 4 Tổng lương, 0 Thoát");
 			options = Integer.parseInt(sc.nextLine());
 			switch(options) {
-			case 1:
-				System.out.println("1: Full, 2: Part");
-				int a = Integer.parseInt(sc.nextLine());
-				themNhanVien(a);
-				break;
-			case 2:
-				hienThiTatCa();
-				break;
-			case 3:
-				System.out.println("Nhập mã nhân viên:");
-				String ma = sc.nextLine();
-				timTheoMa(ma);
-				break;
-			case 4:
-				System.out.println("Tổng lương: " + tinhTongLuong());
-				break;
+			case 1 -> {
+                            System.out.println("1: Full, 2: Part");
+                            int a = Integer.parseInt(sc.nextLine());
+                            themNhanVien(a);
+                        }
+			case 2 -> hienThiTatCa();
+			case 3 -> {
+                            System.out.println("Nhập mã nhân viên:");
+                            String ma = sc.nextLine();
+                            timTheoMa(ma);
+                        }
+			case 4 -> System.out.println("Tổng lương: " + tinhTongLuong());
 			}
 		} while (options != 0);
 	}
