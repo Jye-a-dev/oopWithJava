@@ -12,7 +12,7 @@ public class Cau1 {
 			System.out.println("Nhập 1 số: ");
 			double number = Double.parseDouble(sc.nextLine());
 			System.out.println(number + " :Là 1 số");
-		} catch (Exception e) {
+		} catch (NumberFormatException e) {
 			System.out.println("Không phải số");
 		}
 	}
