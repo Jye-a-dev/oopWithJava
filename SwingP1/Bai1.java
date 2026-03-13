@@ -1,9 +1,8 @@
-package SwingP1;
+package Java.SwingP1;
 
 import java.awt.FlowLayout;
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
-
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 

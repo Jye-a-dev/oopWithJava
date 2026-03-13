@@ -1,4 +1,4 @@
-package ClassJava;
+package classjava;
 
 import java.util.Random;
 import java.util.Scanner;

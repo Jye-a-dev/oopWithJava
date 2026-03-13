@@ -1,4 +1,4 @@
-package SmallBackendWithJava.StorageFiles;
+package small_be_with_java.StorageFiles;
 
 import java.io.File;
 public class Check_File {

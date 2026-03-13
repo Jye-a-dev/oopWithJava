@@ -1,4 +1,4 @@
-package ClassJava;
+package classjava;
 
 public class BaiTap6 {
 	public static void main(String[] args) {

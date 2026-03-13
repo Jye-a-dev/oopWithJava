@@ -1,4 +1,4 @@
-package GettingWithJava;
+package getting_with_java;
 
 import java.util.Scanner;
 

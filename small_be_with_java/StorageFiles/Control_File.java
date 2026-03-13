@@ -1,4 +1,4 @@
-package SmallBackendWithJava.StorageFiles;
+package sm;
 
 import java.util.Scanner;
 

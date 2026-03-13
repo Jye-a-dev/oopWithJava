@@ -1,4 +1,4 @@
-package GettingWithJava;
+package getting_with_java;
 
 public class CauB {
 	public static void main(String[] args) {

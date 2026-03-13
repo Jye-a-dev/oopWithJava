@@ -1,4 +1,4 @@
-package SmallBackendWithJava;
+package small_be_with_java;
 
 import SmallBackendWithJava.StorageFiles.Control_File;
 
