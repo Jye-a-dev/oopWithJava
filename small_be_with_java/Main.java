@@ -1,6 +1,6 @@
 package small_be_with_java;
 
-import SmallBackendWithJava.StorageFiles.Control_File;
+import sm.Control_File;
 
 public class Main {
 	public static void main(String[] args) {
