@@ -1,0 +1,20 @@
+[
+    {
+        "diem": 10,
+        "hocKy": 2,
+        "ketQua": "Đạt",
+        "tenMon": "Toán"
+    },
+    {
+        "diem": 7,
+        "hocKy": 1,
+        "ketQua": "Đạt",
+        "tenMon": "Văn"
+    },
+    {
+        "diem": 3,
+        "hocKy": 4,
+        "ketQua": "Không đạt",
+        "tenMon": "Tin"
+    }
+]
